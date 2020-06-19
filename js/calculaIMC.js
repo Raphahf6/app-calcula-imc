@@ -41,8 +41,10 @@ btnCalculate.onclick = function(){
     listElement.appendChild(imcElement)
     
     
+
 }
 
-function reloadPage(){
+
+function reloadPage() {
     window.location.reload()
 }
