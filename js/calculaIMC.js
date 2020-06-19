@@ -16,7 +16,7 @@ btnCalculate.onclick = function () {
 
 
 
-    if (calculaIMC < 18.5) {
+    if (calculaIMC < 18.5 && calculaIMC > 1) {
         text = `Você esta abaixo do peso seu IMC é ${text}`
 
 
@@ -29,7 +29,13 @@ btnCalculate.onclick = function () {
     } else if (calculaIMC > 30) {
         text = `Você esta com obesidade, seu IMC é ${text}`
 
-    } else {
+    } else if(calculaIMC = 0){
+        text = 'Digite dados validos conforme exemplo!'
+
+    }
+    
+    
+    else {
         text = 'Digite dados validos conforme exemplo! '
     }
 
