@@ -1,0 +1,51 @@
+body{
+    background-image: url(img/bg-home.jpg);
+    background-size: 2000px;
+    padding: 20em;
+}
+
+
+
+h1 {
+    color: #aa99;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+
+li{
+    color: burlywood;
+    list-style-type: square;
+}
+
+.container {
+    margin-top: 100px;
+    max-width: 100%;
+    
+    
+}
+
+
+
+
+
+
+.form-control{
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-bottom:  50px;
+    
+}
+
+.btn {
+    margin-top: 10px;
+    margin-right: 5px;
+    
+}
+
+
+

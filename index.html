@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>IMC calculator</title>
+</head>
+<body>
+    <div class="nav">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">IMC calculator</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>
+    </div>
+
+    <div class="container">
+
+            <div class="bg-image mb-5">
+                    <div class="titulo">
+
+                        <h1 class="display-4"></h1>
+                        <p class="lead"></p>
+
+                    </div>
+
+            </div>
+
+        <input type="text" name="peso" class="form-control" placeholder="Digite o seu peso exemplo : 60" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+        <input type="text" name="altura" class="form-control" placeholder="Digite a sua altura exemplo: 1.70" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+
+        <div class="input-group-append" id="button-addon4">
+          <button class="btn btn-outline-secondary bg-dark text-white" type="button">Calcular</button>
+          <button class="clear btn btn-outline-secondary bg-dark text-white" type="button">Limpar</button>
+        </div>
+        <div class="card bg-dark">
+            
+              <ul id="app">
+                  <li>Calcule seu IMC !</li>
+              </ul>
+            
+          </div>
+        </div>
+
+    <script src="js/calculaIMC.js"></script>
+</body>
+</html>
