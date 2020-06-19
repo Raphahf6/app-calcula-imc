@@ -4,29 +4,29 @@ let inputAltura = document.querySelector('input[name=altura]')
 let btnCalculate = document.querySelector('button.btn')
 let btnClear = document.querySelector('button.clear')
 
-btnClear.onclick = function(){
+btnClear.onclick = function () {
     window.reloadPage()
 }
 
-btnCalculate.onclick = function(){
+btnCalculate.onclick = function () {
     let peso = inputPeso.value
     let altura = inputAltura.value
-    let calculaIMC = peso/(altura * altura)
+    let calculaIMC = peso / (altura * altura)
     let text = '' + calculaIMC.toFixed(2)
 
 
-    
-    if (calculaIMC < 18.5){
-        text = `Você esta abaixo do peso seu IMC é ${text}`
-        
 
-    } else if(calculaIMC >= 18.5 && calculaIMC < 25){
+    if (calculaIMC < 18.5) {
+        text = `Você esta abaixo do peso seu IMC é ${text}`
+
+
+    } else if (calculaIMC >= 18.5 && calculaIMC < 25) {
         text = `Você esta com o peso normal, seu IMC é ${text}`
-        
-    } else if (calculaIMC > 25 && calculaIMC < 30){
+
+    } else if (calculaIMC > 25 && calculaIMC < 30) {
         text = `Você esta com sobrepeso, seu IMC é ${text}`
 
-    } else if(calculaIMC > 30) {
+    } else if (calculaIMC > 30) {
         text = `Você esta com obesidade, seu IMC é ${text}`
 
     } else {
@@ -35,12 +35,12 @@ btnCalculate.onclick = function(){
 
     let imcElement = document.createElement('li')
     let imc = document.createTextNode(text)
-    
-    
+
+
     imcElement.appendChild(imc)
     listElement.appendChild(imcElement)
-    
-    
+
+
 
 }
 
