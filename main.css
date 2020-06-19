@@ -4,15 +4,11 @@ body{
     padding: 20em;
 }
 
-
-
 h1 {
     color: #aa99;
     font-weight: 600;
     line-height: 1.3;
 }
-
-
 
 li{
     color: burlywood;
@@ -25,11 +21,6 @@ li{
     
     
 }
-
-
-
-
-
 
 .form-control{
     margin-top: 50px;
