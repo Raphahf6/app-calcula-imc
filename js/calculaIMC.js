@@ -30,7 +30,7 @@ btnCalculate.onclick = function () {
         text = `Você esta com obesidade, seu IMC é ${text}`
 
     } else {
-        text = 'Digite dados validos! '
+        text = 'Digite dados validos conforme exemplo! '
     }
 
     let imcElement = document.createElement('li')
