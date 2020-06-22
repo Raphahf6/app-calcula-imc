@@ -1,7 +1,14 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(fontes/Inconsolata/inconsolata.ttf);
+}
+
 body{
     background-image: url(img/bg-home.jpg);
     background-size: 2000px;
     padding: 20em;
+    font-family: Inconsolata;
+    
 }
 
 h1 {

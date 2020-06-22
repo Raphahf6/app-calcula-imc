@@ -14,8 +14,7 @@ btnCalculate.onclick = function () {
     let calculaIMC = peso / (altura * altura)
     let text = '' + calculaIMC.toFixed(2)
 
-
-
+    
     if (calculaIMC < 18.5 && calculaIMC > 1) {
         text = `Você esta abaixo do peso seu IMC é ${text}`
 
@@ -38,6 +37,7 @@ btnCalculate.onclick = function () {
     else {
         text = 'Digite dados validos conforme exemplo! '
     }
+
 
     let imcElement = document.createElement('li')
     let imc = document.createTextNode(text)
