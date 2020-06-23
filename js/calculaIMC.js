@@ -12,15 +12,17 @@ btnCalculate.onclick = function () {
     let peso = inputPeso.value
     let altura = inputAltura.value
     let calculaIMC = peso / (altura * altura)
+    let text = true
     
-
-    switch (calculaIMC) {
+    
+    switch (text) {
         case true:
             calculaIMC < 18.5 && calculaIMC > 1 ? text = `Você esta abaixo do peso seu IMC é ${calculaIMC.toFixed(2)}` :
-                calculaIMC >= 18.5 && calculaIMC < 25 ? text = `Você esta com o peso normal, seu IMC é ${calculaIMC.toFixed(2)}` :
-                    calculaIMC > 25 && calculaIMC < 30 ? text = `Você esta com sobrepeso, seu IMC é ${calculaIMC.toFixed(2)}` :
-                        calculaIMC > 30 ? text = `Você esta com obesidade, seu IMC é ${calculaIMC.toFixed(2)}` :
-                            text = 'Digite dados validos conforme exemplo'
+            calculaIMC >= 18.5 && calculaIMC < 25 ? text = `Você esta com o peso normal, seu IMC é ${calculaIMC.toFixed(2)}` :
+            calculaIMC > 25 && calculaIMC < 30 ? text = `Você esta com sobrepeso, seu IMC é ${calculaIMC.toFixed(2)}` :
+            calculaIMC > 30 ? text = `Você esta com obesidade, seu IMC é ${calculaIMC.toFixed(2)}` :
+            text = 'Digite dados validos conforme exemplo'
+            
 
     }
 
@@ -30,8 +32,6 @@ btnCalculate.onclick = function () {
 
     imcElement.appendChild(imc)
     listElement.appendChild(imcElement)
-
-
 
 }
 
