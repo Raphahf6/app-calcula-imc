@@ -12,32 +12,17 @@ btnCalculate.onclick = function () {
     let peso = inputPeso.value
     let altura = inputAltura.value
     let calculaIMC = peso / (altura * altura)
-    let text = '' + calculaIMC.toFixed(2)
-
     
-    if (calculaIMC < 18.5 && calculaIMC > 1) {
-        text = `Você esta abaixo do peso seu IMC é ${text}`
 
-
-    } else if (calculaIMC >= 18.5 && calculaIMC < 25) {
-        text = `Você esta com o peso normal, seu IMC é ${text}`
-
-    } else if (calculaIMC > 25 && calculaIMC < 30) {
-        text = `Você esta com sobrepeso, seu IMC é ${text}`
-
-    } else if (calculaIMC > 30) {
-        text = `Você esta com obesidade, seu IMC é ${text}`
-
-    } else if(calculaIMC = 0){
-        text = 'Digite dados validos conforme exemplo!'
+    switch (calculaIMC) {
+        case true:
+            calculaIMC < 18.5 && calculaIMC > 1 ? text = `Você esta abaixo do peso seu IMC é ${calculaIMC.toFixed(2)}` :
+                calculaIMC >= 18.5 && calculaIMC < 25 ? text = `Você esta com o peso normal, seu IMC é ${calculaIMC.toFixed(2)}` :
+                    calculaIMC > 25 && calculaIMC < 30 ? text = `Você esta com sobrepeso, seu IMC é ${calculaIMC.toFixed(2)}` :
+                        calculaIMC > 30 ? text = `Você esta com obesidade, seu IMC é ${calculaIMC.toFixed(2)}` :
+                            text = 'Digite dados validos conforme exemplo'
 
     }
-    
-    
-    else {
-        text = 'Digite dados validos conforme exemplo! '
-    }
-
 
     let imcElement = document.createElement('li')
     let imc = document.createTextNode(text)
